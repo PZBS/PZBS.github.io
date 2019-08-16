@@ -1,0 +1,3 @@
+[submodule "square-deal"]
+	path = square-deal
+	url = https://github.com/PZBS/square-deal
