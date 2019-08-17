@@ -1,0 +1,6 @@
+lang: pl-PL
+theme: jekyll-theme-slate
+title: it.pzbs.pl
+description: Witryna Komisji IT PZBS
+kramdown:
+  parse_block_html: true
