@@ -88,8 +88,8 @@ Procedura zapobiegająca manipulacji rozkładami rozdań, poświadczająca ich l
 <div class="col">
 ### JFR Pary
  - instrukcje/poradniki:
-   - [prowadzenie turnieju na IMP](doc/pary-impy/)
-   - [prowadzenie turnieju "barometrem"](doc/pary-barometr/)
+   - [prowadzenie turnieju na IMP](doc/pary-impy.pdf)
+   - [prowadzenie turnieju "barometrem"](doc/pary-barometr.pdf)
  - [pary-bidding-data](https://github.com/emkael/jfrpary-bidding-data)
    - wyświetlanie przebiegu licytacji zbieranego z BridgeMate'ów
  - [pary-virtual-table](https://github.com/emkael/jfrpary-virtual-table)
