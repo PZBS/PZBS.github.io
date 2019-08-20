@@ -17,7 +17,7 @@ Interfejs programistyczny udostępniający aktualne obliczenia PKL: [dokumentacj
 Procedura zapobiegająca manipulacji rozkładami rozdań, poświadczająca ich losowość.
 - [opis procedury](http://www.pzbs.pl/sedziowie/inne/procedura-generowania.pdf)
 - [instrukcja](https://emkael.github.io/2019/01/03/generating-and-verifying-boards-with-squaredeal/)
-- [wykaz rozgrywek PZBS z wdrożoną procedurą](square-deal/)
+- [wykaz rozgrywek PZBS z wdrożoną procedurą](https://pzbs.github.io/square-deal/)
 
 ### Tabele IMP -&gt; VP
 [Generator tabel VP](https://www.pzbs.pl/sedziowie/vp/).
