@@ -100,7 +100,7 @@ Procedura zapobiegająca manipulacji rozkładami rozdań, poświadczająca ich l
 </div>
 </div>
 
-# Dydaktyka
+## Dydaktyka
 
 <div class="row">
 <div class="col">
