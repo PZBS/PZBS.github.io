@@ -1,7 +1,7 @@
 repository: PZBS/pzbs.github.io
 lang: pl-PL
 theme: jekyll-theme-cayman
-title: it.pzbs.pl
+title: pzbs.github.io
 description: Witryna Komisji IT PZBS
 kramdown:
   parse_block_html: true
