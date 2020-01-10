@@ -19,20 +19,27 @@ Parametry (standardowe)
 
 W standardowym trybie użycia API wszystkie powyższe parametry są obowiązkowe.
 
-API przyjmuje również opcjonalny parametr:
+API przyjmuje również opcjonalne parametry:
 
 | Parametr | Opis              | Wartości | Wartość domyślna |
 | -------- | ----------------- | -------- | ---------------- |
 | players  | liczba zawodników | liczba całkowita dodatnia | `contestants` \* `type` |
+| version  | wersja regulaminu | patrz poniżej | `'2'` |
 
-Paramter ten służy do wyliczenia prawidłowego średniego WK dla turniejów teamów nieczteroosobowych. Jest on używany *tylko* do wyliczenia średniego WK, drugi składnik maksymalnej liczby PKL dla turnieju wciąż wyliczany jest zgodnie z pkt. 9 Regulaminu Klasyfikacyjnego - jako `contestants` \* `type`.
+Paramter `players` służy do wyliczenia prawidłowego średniego WK dla turniejów teamów nieczteroosobowych. Jest on używany *tylko* do wyliczenia średniego WK, drugi składnik maksymalnej liczby PKL dla turnieju wciąż wyliczany jest zgodnie z pkt. 9 Regulaminu Klasyfikacyjnego - jako `contestants` \* `type`.
+
+Parametr `version` pozwala na określenie wersji Regulaminu Klasyfikacyjnego (lub Regulaminu KMP) według którego wyliczane są PKLe. Dozowolone wartości:
+ * `'1'` - Regulamin Klasyfikacyjny 01.11.2018, Regulamin KMP sprzed 01.01.2020
+ * `'2'` (domyślna) - Regulamin Klasyfikacyjny 01.11.2018, Regulamin KMP od 01.01.2020
+
+Wartością domyślną jest **zawsze** wartość odpowiadająca bieżącemu stanowi prawnemu.
 
 Parametry (zaawansowane)
 ------------------------
 
 API akceptuje również parametry pozwalające ręcznie ustalić wagę turnieju, minimum PKL za pierwszej miejsce oraz parametry funkcji obliczającej PKL.
 
-Wszystkie zaawansowane paramtery przekazywane są w zminnej HTTP `manual`.
+Wszystkie zaawansowane paramtery przekazywane są w zmiennej HTTP `manual`.
 
 | Parametr | Opis              | Wartości | Wartość domyślna |
 | -------- | ----------------- | -------- | ---------------- |
