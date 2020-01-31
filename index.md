@@ -66,6 +66,13 @@ Procedura zapobiegająca manipulacji rozkładami rozdań, poświadczająca ich l
 ### [Deal Converter](https://deal.emkael.info/)
  - konwerter formatów zapisu rozkładów rozdań
  - dostępna [wersją off-line](https://github.com/emkael/deal-convert)
+ 
+### [TechSoup Polska](https://www.techsoup.pl/pl/item-details/904/program-techsoup-polska)
+ - darmowy pakiet G Suite zawierający m.in. pocztę firmową i przestrzeń w chmurze
+ - używany sprzęt komputerowy w świetnym stanie oraz z 2 letnią gwarancją
+ - najnowsza wersja MS Office z dożywotnią licencją za 200 zł
+ - Windows 10 Proffesional za 50 zł (do 50 licencji, jednorazowy zakup)
+ - i inne
 </div>
 </div>
 
