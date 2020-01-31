@@ -54,13 +54,6 @@ Procedura zapobiegająca manipulacji rozkładami rozdań, poświadczająca ich l
 
 ### [Proximity Printer](https://github.com/PZBS/proximity-printer)
  - wydruk historii z użyciem kart zbliżeniowych
- 
-### [TechSoup Polska](https://www.techsoup.pl/pl/item-details/904/program-techsoup-polska)
- - darmowy pakiet G Suite zawierający m.in. pocztę firmową i przestrzeń w chmurze
- - używany sprzęt komputerowy w świetnym stanie oraz z 2 letnią gwarancją
- - najnowsza wersja MS Office z dożywotnią licencją za 200 zł
- - Windows 10 Professional za 50 zł (do 50 licencji, jednorazowy zakup)
- - i inne
 </div>
 <div class="col">
 ### [Bridge Calculator](http://bcalc.w8.pl/) (bcalc)
@@ -119,5 +112,20 @@ Procedura zapobiegająca manipulacji rozkładami rozdań, poświadczająca ich l
 ### Artykuły / poradniki
  - [KoPS: instrukcja](http://jfr.pzbs.pl/kopsinstrukcja.html)
  - [diagnostyka zapytań wykonywanych do plików BWS](https://emkael.github.io/2018/02/28/debugging-queries-to-bws/)
+</div>
+</div>
+
+## Materiały dla WZBSów
+
+<div class="row">
+<div class="col">
+### [TechSoup Polska](https://www.techsoup.pl/pl/item-details/904/program-techsoup-polska)
+ - darmowy pakiet G Suite zawierający m.in. pocztę firmową i przestrzeń w chmurze
+ - używany sprzęt komputerowy w świetnym stanie oraz z 2 letnią gwarancją
+ - najnowsza wersja MS Office z dożywotnią licencją za 200 zł
+ - Windows 10 Professional za 50 zł (do 50 licencji, jednorazowy zakup)
+ - i inne</div>
+<div class="col">
+ 
 </div>
 </div>
