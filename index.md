@@ -115,7 +115,7 @@ Procedura zapobiegająca manipulacji rozkładami rozdań, poświadczająca ich l
 </div>
 </div>
 
-## Materiały dla WZBSów
+## Materiały dla WZBSów i inne
 
 <div class="row">
 <div class="col">
@@ -124,8 +124,10 @@ Procedura zapobiegająca manipulacji rozkładami rozdań, poświadczająca ich l
  - używany sprzęt komputerowy w świetnym stanie oraz z 2 letnią gwarancją
  - najnowsza wersja MS Office z dożywotnią licencją za 200 zł
  - Windows 10 Professional za 50 zł (do 50 licencji, jednorazowy zakup)
- - i inne</div>
+ - i inne
 <div class="col">
- 
+### [GitHub PZBS](https://github.com/PZBS/)
+ - loga PZBS w wysokiej rozdzielczości
+ - inne publiczne repozytoria
 </div>
 </div>
