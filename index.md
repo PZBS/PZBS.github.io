@@ -40,6 +40,10 @@ Procedura zapobiegająca manipulacji rozkładami rozdań, poświadczająca ich l
 ### [CongressScore](https://michzimny.pl/congressscore-info)
  - obliczenia punktacji długofalowych
 
+### [bbo2csv](https://bbo2csv.fedox.pl/)
+ - konwersja wyników turnieju BBO do CSV obsługiwanego przez programy liczące klasyfikacje długofalowe
+ - [https://bbo2csv.fedox.pl/help/](instrukcja obsługi)
+
 </div>
 </div>
 
