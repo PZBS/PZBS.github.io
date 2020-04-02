@@ -42,7 +42,7 @@ Procedura zapobiegająca manipulacji rozkładami rozdań, poświadczająca ich l
 
 ### [bbo2csv](https://bbo2csv.fedox.pl/)
  - konwersja wyników turnieju BBO do CSV obsługiwanego przez programy liczące klasyfikacje długofalowe
- - [https://bbo2csv.fedox.pl/help/](instrukcja obsługi)
+ - [instrukcja obsługi](https://bbo2csv.fedox.pl/help/)
 
 </div>
 </div>
