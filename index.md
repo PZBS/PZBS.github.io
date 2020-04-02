@@ -65,7 +65,7 @@ Procedura zapobiegająca manipulacji rozkładami rozdań, poświadczająca ich l
 
 ### [Deal Converter](https://deal.emkael.info/)
  - konwerter formatów zapisu rozkładów rozdań
- - dostępna [wersją off-line](https://github.com/emkael/deal-convert)
+ - dostępna [wersja off-line](https://github.com/emkael/deal-convert)
 
 </div>
 </div>
