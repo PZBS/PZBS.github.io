@@ -7,7 +7,7 @@ title: Witryna Komisji IT PZBS
 <div class="row">
 <div class="col">
 ### Punkty klasyfikacyjne (PKL)
-#### [Kalkulator](http://pzbs.pl/sedziowie/pkl/pkle2018.php)
+#### [Kalkulator](http://pzbs.pl/sedziowie/pkl/pkle.php)
 Formularz obliczający PKL dla turniejów zgodnie z pkt. 9 [Regulaminu Klasyfikacyjnego PZBS](https://www.pzbs.pl/regulaminy-stale/2340-regulamin-klasyfikacyjny).
 #### API dla programistów
 Interfejs programistyczny udostępniający aktualne obliczenia PKL: [dokumentacja](doc/api-pkl/).
