@@ -58,10 +58,7 @@ W przypadku podania zarówno parametru `manual[min_points]`, jak i `manual[tourn
 
 Dla turniejów o randze KMP powyższe parametry, jak i parametr liczby rozdań, są ignorowane (ale API wciąż wymaga podania parametrów `over39_boards`).
 
-Dla turniejów w randze BridgeNET Lokalny efekt podania tych parametrów jest nieokreślony, w szczególności nie ma gwarancji, że przy podaniu parametru `manual[min_points]` stanie się którakolwiek z poniższych rzeczy:
- * naliczenie za 1. miejsce podanej liczby PKL
- * naliczenie za 1. miejsce podanej liczby PKL zmodyfikowanej o czynnik wynikający z liczby rozdań, określony w Regulaminie BridgeNET Lokalny
- * naliczenie za 1. miejsce liczby PKL wynikającej z Regulaminu BridgeNET Lokalny, bez uwzględniania parametru `manual[min_points]`
+Dla turniejów w randze BridgeNET Lokalny powyższe parametry są ignorowane.
 
 Przykładowe zapytania do API
 ----------------------------
