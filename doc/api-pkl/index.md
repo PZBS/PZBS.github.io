@@ -14,7 +14,7 @@ Parametry (standardowe)
 | type            | typ turnieju       | `1` = indywiduel, `2` = pary, `4` = teamy |
 | contestants     | liczba uczestników | liczba całkowita dodatnia |
 | title_sum       | suma WK            | liczba nieujemna |
-| tournament_rank | ranga turnieju     | `0` = klubowy, `1` = okręgowy, `2` = regionalny, `3` = OTX, `4` = OTX\*, `5` = OTX\*\*, `6` = OTX\*\*\*, `7` = OTX\*\*\*\*, `101` = KMP |
+| tournament_rank | ranga turnieju     | `0` = klubowy, `1` = okręgowy, `2` = regionalny, `3` = OTX, `4` = OTX\*, `5` = OTX\*\*, `6` = OTX\*\*\*, `7` = OTX\*\*\*\*, `101` = KMP, `102` = BridgeNET Lokalny |
 | over39_boards   | liczba rozdań      | `0` = mniejsza niż 40, `1` = co najmniej 40 |
 
 W standardowym trybie użycia API wszystkie powyższe parametry są obowiązkowe.
@@ -25,12 +25,16 @@ API przyjmuje również opcjonalne parametry:
 | -------- | ----------------- | -------- | ---------------- |
 | players  | liczba zawodników | liczba całkowita dodatnia | `contestants` \* `type` |
 | version  | wersja regulaminu | patrz poniżej | `'2'` |
+| boards   | liczba rozdań     | liczba całkowita nieujemna |
 
 Paramter `players` służy do wyliczenia prawidłowego średniego WK dla turniejów teamów nieczteroosobowych. Jest on używany *tylko* do wyliczenia średniego WK, drugi składnik maksymalnej liczby PKL dla turnieju wciąż wyliczany jest zgodnie z pkt. 9 Regulaminu Klasyfikacyjnego - jako `contestants` \* `type`.
 
-Parametr `version` pozwala na określenie wersji Regulaminu Klasyfikacyjnego (lub Regulaminu KMP) według którego wyliczane są PKLe. Dozowolone wartości:
+Parametr `boards` może przesłonić wartość parametru `over39_boards`, jest on poza tym **obowiązkowy** dla turniejów typu BridgeNET Lokalny (`tournament_rank` = `102`).
+
+Parametr `version` pozwala na określenie wersji Regulaminu Klasyfikacyjnego (lub regulaminów zawodów) według którego wyliczane są PKLe. Dozowolone wartości:
  * `'1'` - Regulamin Klasyfikacyjny 01.11.2018, Regulamin KMP sprzed 01.01.2020
- * `'2'` (domyślna) - Regulamin Klasyfikacyjny 01.11.2018, Regulamin KMP od 01.01.2020
+ * `'2'` - Regulamin Klasyfikacyjny 01.11.2018, Regulamin KMP od 01.01.2020
+ * `'3'` (domyślna) - Regulamin Klasyfikacyjny od kwietnia 2020, Regulamin KMP od 01.01.2020, Regulamin BridgeNET Lokalny od 01.05.2020
 
 Wartością domyślną jest **zawsze** wartość odpowiadająca bieżącemu stanowi prawnemu.
 
@@ -53,6 +57,11 @@ W parametrze `manual[points_cutoffs]` poprzedniki każdej pary (odsetek najwyżs
 W przypadku podania zarówno parametru `manual[min_points]`, jak i `manual[tournament_weight]`, parametry `tournament_rank` i `over39_boards` przestają być wymagane.
 
 Dla turniejów o randze KMP powyższe parametry, jak i parametr liczby rozdań, są ignorowane (ale API wciąż wymaga podania parametrów `over39_boards`).
+
+Dla turniejów w randze BridgeNET Lokalny efekt podania tych parametrów jest nieokreślony, w szczególności nie ma gwarancji, że przy podaniu parametru `manual[min_points]` stanie się którakolwiek z poniższych rzeczy:
+ * naliczenie za 1. miejsce podanej liczby PKL
+ * naliczenie za 1. miejsce podanej liczby PKL zmodyfikowanej o czynnik wynikający z liczby rozdań, określony w Regulaminie BridgeNET Lokalny
+ * naliczenie za 1. miejsce liczby PKL wynikającej z Regulaminu BridgeNET Lokalny, bez uwzględniania parametru `manual[min_points]`
 
 Przykładowe zapytania do API
 ----------------------------
