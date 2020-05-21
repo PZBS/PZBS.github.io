@@ -54,11 +54,13 @@ Wszystkie zaawansowane paramtery przekazywane są w zmiennej HTTP `manual`.
 
 W parametrze `manual[points_cutoffs]` poprzedniki każdej pary (odsetek najwyższych miejsc) tworzą ciąg rosnący, następniki (odsetek maksymalnej liczby PKL) tworzą ciąg nierosnący.
 
-W przypadku podania zarówno parametru `manual[min_points]`, jak i `manual[tournament_weight]`, parametry `tournament_rank` i `over39_boards` przestają być wymagane.
+W przypadku podania parametru `manual[min_points]`, parametry `title_sum`, `tournament_rank` i `over39_boards` przestają być wymagane.
 
-Dla turniejów o randze KMP powyższe parametry, jak i parametr liczby rozdań, są ignorowane (ale API wciąż wymaga podania parametrów `over39_boards`).
+W przypadku podania parametru `manual[tournament_weight]`, parametry `tournament_rank` i `over39_boards` przestają być wymagane.
 
-Dla turniejów w randze BridgeNET Lokalny powyższe parametry są ignorowane.
+Dla turniejów o randze KMP wszystkie parametry `manual` i parametr `over39_boards` są ignorowane (ale API wciąż wymaga podania parametru `over39_boards`).
+
+Dla turniejów w randze BridgeNET Lokalny parametry `manual` są ignorowane.
 
 Przykładowe zapytania do API
 ----------------------------
