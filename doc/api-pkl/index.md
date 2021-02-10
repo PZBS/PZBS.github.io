@@ -34,7 +34,8 @@ Parametr `boards` może przesłonić wartość parametru `over39_boards`, jest o
 Parametr `version` pozwala na określenie wersji Regulaminu Klasyfikacyjnego (lub regulaminów zawodów) według którego wyliczane są PKLe. Dozowolone wartości:
  * `'1'` - Regulamin Klasyfikacyjny 01.11.2018, Regulamin KMP sprzed 01.01.2020
  * `'2'` - Regulamin Klasyfikacyjny 01.11.2018, Regulamin KMP od 01.01.2020
- * `'3'` (domyślna) - Regulamin Klasyfikacyjny od kwietnia 2020, Regulamin KMP od 01.01.2020, Regulamin BridgeNET Lokalny od 01.05.2020
+ * `'3'` - Regulamin Klasyfikacyjny od kwietnia 2020, Regulamin KMP od 01.01.2020, Regulamin BridgeNET Lokalny od 01.05.2020
+ * `'3.1'`(domyślna) - jak wersja 3, z uwzględnieniem [uchwały z 07.01.2021](https://www.pzbs.pl/archiwum/wydarzenia/6025-uchwala-1-2021-2016-2020-przyznawanie-pkl-i-za-turnieje-na-realbridge)
 
 Wartością domyślną jest **zawsze** wartość odpowiadająca bieżącemu stanowi prawnemu.
 
