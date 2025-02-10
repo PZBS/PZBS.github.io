@@ -35,14 +35,15 @@ Parametr `version` pozwala na określenie wersji Regulaminu Klasyfikacyjnego (lu
  * `'1'` - Regulamin Klasyfikacyjny 01.11.2018, Regulamin KMP sprzed 01.01.2020
  * `'2'` - Regulamin Klasyfikacyjny 01.11.2018, Regulamin KMP od 01.01.2020
  * `'3'` - Regulamin Klasyfikacyjny od kwietnia 2020, Regulamin KMP od 01.01.2020, Regulamin BridgeNET Lokalny od 01.05.2020
- * `'3.1'`(domyślna) - jak wersja 3, z uwzględnieniem [uchwały z 07.01.2021](https://www.pzbs.pl/archiwum/wydarzenia/6025-uchwala-1-2021-2016-2020-przyznawanie-pkl-i-za-turnieje-na-realbridge)
+ * `'3.1'` - jak wersja 3, z uwzględnieniem [uchwały z 07.01.2021](https://www.pzbs.pl/archiwum/wydarzenia/6025-uchwala-1-2021-2016-2020-przyznawanie-pkl-i-za-turnieje-na-realbridge)
+ * `'4'` (domyślna) - Regulamin Klasyfikacyjny 01.01.2025, reszta jak w v3.1
 
 Wartością domyślną jest **zawsze** wartość odpowiadająca bieżącemu stanowi prawnemu.
 
 Parametry (zaawansowane)
 ------------------------
 
-API akceptuje również parametry pozwalające ręcznie ustalić wagę turnieju, minimum PKL za pierwszej miejsce oraz parametry funkcji obliczającej PKL.
+API akceptuje również parametry pozwalające ręcznie ustalić wagę turnieju, minimum/liczbę PKL za pierwszej miejsce oraz parametry funkcji obliczającej PKL.
 
 Wszystkie zaawansowane paramtery przekazywane są w zmiennej HTTP `manual`.
 
@@ -62,6 +63,8 @@ W przypadku podania parametru `manual[tournament_weight]`, parametry `tournament
 Dla turniejów o randze KMP wszystkie parametry `manual` i parametr `over39_boards` są ignorowane (ale API wciąż wymaga podania parametru `over39_boards`).
 
 Dla turniejów w randze BridgeNET Lokalny parametry `manual` są ignorowane.
+
+Od wersji `'4'`, tj. od Regulaminu Klasyfikacyjnego z 01.01.2025, jeśli ustawiony jest parametr minimalnej liczby PKL za 1. miejsce (`manual[min_points]`), traktowany jest on jako dokładna liczba PKL za 1. miejsce, czyli nie jest zwiększany do wartości pochodzącej z obliczeń `średnie WK × waga + 5% l. zawodników`.
 
 Przykładowe zapytania do API
 ----------------------------
