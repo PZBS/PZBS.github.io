@@ -60,11 +60,15 @@ W przypadku podania parametru `manual[min_points]`, parametry `title_sum`, `tour
 
 W przypadku podania parametru `manual[tournament_weight]`, parametry `tournament_rank` i `over39_boards` przestają być wymagane.
 
+Od wersji `'4'`, tj. od Regulaminu Klasyfikacyjnego z 01.01.2025, jeśli ustawiony jest parametr minimalnej liczby PKL za 1. miejsce (`manual[min_points]`), traktowany jest on jako dokładna liczba PKL za 1. miejsce, czyli nie jest zwiększany do wartości pochodzącej z obliczeń `średnie WK × waga + 5% l. zawodników`.
+
+Jako że poprawka Regulaminu Klasyfikacyjnego z 12.02.2025 dodała do powyższej, ściśle ustalonej, liczby PKL za 1. miejsce mnożnik +25% dla turniejów teamów, można się zdziwić, że podaje się `manual[min_points]`, API obiecuje, że ma być tyle PKL za 1. miejsce, a tu zonk - jest więcej i nie ma jak ustawić, żeby nie było więcej.
+
+Dlatego wersja `'4'` wprowadza również parametr `manual[override_type_multiplier]` który - gdy ustawiony na `1` - wyłącza mnożnik +25%. To samo mógłbyś osiągnąć, kłamiąc, że nie grasz wcale turnieju teamów, bo typ turnieju w przypadku podania `manual[min_points]` nie jest kompletnie do niczego używany - przecież Ci nie zabronię, nie jestem Twoim starym.
+
 Dla turniejów o randze KMP wszystkie parametry `manual` i parametr `over39_boards` są ignorowane (ale API wciąż wymaga podania parametru `over39_boards`).
 
 Dla turniejów w randze BridgeNET Lokalny parametry `manual` są ignorowane.
-
-Od wersji `'4'`, tj. od Regulaminu Klasyfikacyjnego z 01.01.2025, jeśli ustawiony jest parametr minimalnej liczby PKL za 1. miejsce (`manual[min_points]`), traktowany jest on jako dokładna liczba PKL za 1. miejsce, czyli nie jest zwiększany do wartości pochodzącej z obliczeń `średnie WK × waga + 5% l. zawodników`.
 
 Przykładowe zapytania do API
 ----------------------------
