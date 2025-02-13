@@ -24,7 +24,7 @@ API przyjmuje również opcjonalne parametry:
 | Parametr | Opis              | Wartości | Wartość domyślna |
 | -------- | ----------------- | -------- | ---------------- |
 | players  | liczba zawodników | liczba całkowita dodatnia | `contestants` \* `type` |
-| version  | wersja regulaminu | patrz poniżej | `'2'` |
+| version  | wersja regulaminu | patrz poniżej | `'4'` |
 | boards   | liczba rozdań     | liczba całkowita nieujemna |
 
 Paramter `players` służy do wyliczenia prawidłowego średniego WK dla turniejów teamów nieczteroosobowych. Jest on używany *tylko* do wyliczenia średniego WK, drugi składnik maksymalnej liczby PKL dla turnieju wciąż wyliczany jest zgodnie z pkt. 9 Regulaminu Klasyfikacyjnego - jako `contestants` \* `type`.
